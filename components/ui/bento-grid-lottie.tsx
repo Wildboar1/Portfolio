@@ -1,6 +1,6 @@
 "use client";
 
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 
 import animationData from "@/data/confetti.json";
 
@@ -15,14 +15,10 @@ const BentoGridLottie = ({ copied }: BentoGridLottieProps) => {
       className="pointer-events-none absolute -bottom-5 right-0 cursor-default"
     >
       <Lottie
-        options={{
-          loop: copied,
-          autoplay: copied,
-          animationData,
-          rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice",
-          },
-        }}
+        animationData={animationData}
+        loop={copied}
+        autoplay={copied}
+        style={{ width: "100%", height: "100%" }}
       />
     </button>
   );
