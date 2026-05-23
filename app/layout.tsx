@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display, Syne } from "next/font/google";
-import type { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react"; import { useEffect } from "react";
 
 import { siteConfig } from "@/config";
 import { SmoothScroll } from "@/components/SmoothScroll";
