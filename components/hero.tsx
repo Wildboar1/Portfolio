@@ -5,9 +5,7 @@ import gsap from "gsap";
 import dynamic from "next/dynamic";
 
 // Dynamically import Spline to prevent SSR errors
-const Spline = dynamic(() => import("@splinetool/react-spline/dist/react-spline.js"), { ssr: false });
-  ssr: false,
-});
+const Spline = dynamic(() => import("@splinetool/react-spline/next"), { ssr: false });
 
 export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
