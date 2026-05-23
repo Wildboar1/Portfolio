@@ -188,10 +188,10 @@ export const LiveCodingStatus = ({
       return (
         <pre className="font-mono text-[9px] md:text-[10px] lg:text-xs text-neutral-300 leading-relaxed">
           <span className="text-pink-500">def</span> <span className="text-blue-400">main</span>():<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;print(<span className="text-emerald-400">"Deploying self-healing microservices..."</span>)<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;cloud_agent.status = <span className="text-emerald-400">"ONLINE"</span><br />
+          &nbsp;&nbsp;&nbsp;&nbsp;print(<span className="text-emerald-400">&quot;Deploying self-healing microservices...&quot;</span>)<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;cloud_agent.status = <span className="text-emerald-400">&quot;ONLINE&quot;</span><br />
           &nbsp;&nbsp;&nbsp;&nbsp;cloud_agent.orchestrate()<br /><br />
-          <span className="text-pink-500">if</span> __name__ == <span className="text-emerald-400">"__main__"</span>:<br />
+          <span className="text-pink-500">if</span> __name__ == <span className="text-emerald-400">&quot;__main__&quot;</span>:<br />
           &nbsp;&nbsp;&nbsp;&nbsp;main()
         </pre>
       );
